@@ -21,6 +21,7 @@ scoreboard players set team_friendlyfire deathswap.setting 0
 scoreboard players set gmchange deathswap.setting 0
 scoreboard players set survival_time deathswap.setting 60
 scoreboard players set creative_time deathswap.setting 3
+scoreboard players set swap_time_setting deathswap.setting 300
 
 function deathswap:ui/update/main
 

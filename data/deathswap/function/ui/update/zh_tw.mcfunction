@@ -15,11 +15,18 @@ execute if score difficulty deathswap.setting matches 1 run item replace entity 
 execute if score difficulty deathswap.setting matches 2 run item replace entity @a[tag=admin,gamemode=!creative] inventory.0 with piglin_head[custom_data={ui:1b},custom_name='{"text":"§6難度：普通","italic":false}',lore=['"§7遊戲難度"']]
 execute if score difficulty deathswap.setting matches 3 run item replace entity @a[tag=admin,gamemode=!creative] inventory.0 with wither_skeleton_skull[custom_data={ui:1b},custom_name='{"text":"§c難度：困難","italic":false}',lore=['"§7遊戲難度"']]
 
-#time
-execute if score time_set deathswap.setting matches 0 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with clock[custom_data={ui:1b},custom_name='{"text":"§b時間：早上","italic":false}',lore=['"§7遊戲時間"']]
-execute if score time_set deathswap.setting matches 1 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with clock[custom_data={ui:1b},custom_name='{"text":"§6時間：中午","italic":false}',lore=['"§7遊戲時間"']]
-execute if score time_set deathswap.setting matches 2 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with clock[custom_data={ui:1b},custom_name='{"text":"§7時間：傍晚","italic":false}',lore=['"§7遊戲時間"']]
-execute if score time_set deathswap.setting matches 3 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with clock[custom_data={ui:1b},custom_name='{"text":"§8時間：晚上","italic":false}',lore=['"§7遊戲時間"']]
+#swap_time
+execute if score swap_time_setting deathswap.setting matches 300 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：300秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 330 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：330秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 360 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：360秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 390 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：390秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 420 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：420秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 450 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：450秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 480 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：480秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 510 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：510秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 540 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：540秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 570 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：570秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 600 run item replace entity @a[tag=admin,gamemode=!creative] inventory.9 with ender_eye[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：600秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
 
 #weather
 execute if score weather deathswap.setting matches 0 run item replace entity @a[tag=admin,gamemode=!creative] inventory.18 with sunflower[custom_data={ui:1b},custom_name='{"text":"§b天氣：晴朗","italic":false}',lore=['"§7遊戲天氣"']]

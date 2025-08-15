@@ -8,7 +8,7 @@
 #admin-------------------
 ##inventory
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.0 *[custom_data={ui:1b}] run function deathswap:setting/difficulty
-execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.9 *[custom_data={ui:1b}] run function deathswap:setting/time
+execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.9 *[custom_data={ui:1b}] run function deathswap:setting/swap_time
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.18 *[custom_data={ui:1b}] run function deathswap:setting/weather
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.1 *[custom_data={ui:1b}] run function deathswap:setting/mobspawn
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.10 *[custom_data={ui:1b}] run function deathswap:setting/time_cycle
