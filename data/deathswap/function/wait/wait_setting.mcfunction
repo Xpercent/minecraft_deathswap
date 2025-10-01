@@ -29,6 +29,11 @@ scoreboard players set swap_count deathswap.count 0
 scoreboard players set tick deathswap.timer 0
 scoreboard players set second deathswap.timer 0
 scoreboard players set swap_countdown deathswap.timer 0
+
+###########by xpercent-yx
+scoreboard players operation swap_time deathswap.timer = swap_time_setting deathswap.setting
+###########
+
 scoreboard players set swap_time deathswap.timer 0
 scoreboard players reset @a deathswap.hurt
 scoreboard players reset @a deathswap.death

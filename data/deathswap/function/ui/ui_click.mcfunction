@@ -39,7 +39,8 @@ execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.23 *[cus
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.6 *[custom_data={ui:1b},count=2] run function deathswap:team/random_main {random:2}
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.7 *[custom_data={ui:1b},count=3] run function deathswap:team/random_main {random:3}
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.8 *[custom_data={ui:1b},count=4] run function deathswap:team/random_main {random:4}
-execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.15 *[custom_data={ui:1b}] run function deathswap:ui/gmchange
+# execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.15 *[custom_data={ui:1b}] run function deathswap:ui/gmchange
+execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.15 *[custom_data={ui:1b}] run function deathswap:setting/swap_time
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.16 *[custom_data={ui:1b}] run function deathswap:ui/language
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.17 *[custom_data={ui:1b}] run function deathswap:team/choose_team
 execute as @a[tag=admin,tag=!creative] unless items entity @s inventory.24 *[custom_data={ui:1b}] run function deathswap:setting/default

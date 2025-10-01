@@ -104,9 +104,21 @@ item replace entity @a[tag=admin,gamemode=!creative] inventory.6 with magenta_gl
 item replace entity @a[tag=admin,gamemode=!creative] inventory.7 with magenta_glazed_terracotta[custom_data={ui:1b},custom_name='{"text":"§e隨機分為三隊","italic":false}',lore=['"§7將非旁觀者的玩家隨機分為兩隊"']] 3
 item replace entity @a[tag=admin,gamemode=!creative] inventory.8 with magenta_glazed_terracotta[custom_data={ui:1b},custom_name='{"text":"§e隨機分為四隊","italic":false}',lore=['"§7將非旁觀者的玩家隨機分為兩隊"']] 4
 
-#gmchange
-execute if score gmchange deathswap.setting matches 0 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§c遊戲模式定時切換：關閉","italic":false}',lore=['"§7在設定時間定時切換遊戲模式"']]
-execute if score gmchange deathswap.setting matches 1 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§a遊戲模式定時切換：開啟","italic":false}',lore=['"§7在設定時間定時切換遊戲模式"'],enchantment_glint_override=true]
+# #gmchange
+# execute if score gmchange deathswap.setting matches 0 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§c遊戲模式定時切換：關閉","italic":false}',lore=['"§7在設定時間定時切換遊戲模式"']]
+# execute if score gmchange deathswap.setting matches 1 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§a遊戲模式定時切換：開啟","italic":false}',lore=['"§7在設定時間定時切換遊戲模式"'],enchantment_glint_override=true]
+#swap_time
+execute if score swap_time_setting deathswap.setting matches 300 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：300秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 330 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：330秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 360 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：360秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 390 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：390秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 420 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：420秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 450 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：450秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 480 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：480秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 510 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：510秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 540 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：540秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 570 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：570秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
+execute if score swap_time_setting deathswap.setting matches 600 run item replace entity @a[tag=admin,gamemode=!creative] inventory.15 with grass_block[custom_data={ui:1b},custom_name='{"text":"§b傳送時間：600秒","italic":false}',lore=['"§7玩家交換位置的時間間隔"']]
 
 #language
 item replace entity @a[tag=admin,gamemode=!creative] inventory.16 with player_head[custom_data={ui:1b},custom_name='{"translate":"options.language","color": "yellow","italic":false}',lore=['{"translate":"narrator.button.language","color":"gray","italic":false}'],profile={name:"",id:[I;-1121419518,2067529689,-982738485,263170875], properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThkYWExZTNlZDk0ZmYzZTMzZTFkNGM2ZTQzZjAyNGM0N2Q3OGE1N2JhNGQzOGU3NWU3YzkyNjQxMDYifX19"}]}]
